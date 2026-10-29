@@ -359,6 +359,29 @@
       return result;
     }
 
+    // 22) 瞬间建造 / 调试权力（作弊类）
+    if (/瞬间(完成)?(建造|建)|秒建|即时建造|建筑瞬间|建造瞬间/.test(text)) {
+      result.matched = true; result.name = 'instantconstruction';
+      result.command = 'instantconstruction';
+      result.explanation = '开启后所有建造（工厂、建筑、舰船等）瞬间完成。再次输入可关闭。';
+      result.confidence = 0.9;
+      return result;
+    }
+    if (/调试权力|所有能力|作弊|神级|debug\s*powers/.test(low)) {
+      result.matched = true; result.name = 'debug_powers';
+      result.command = 'debug_powers';
+      result.explanation = '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。再次输入可关闭。';
+      result.confidence = 0.9;
+      return result;
+    }
+    if (/允许.*分歧|意识形态分歧/.test(text)) {
+      result.matched = true; result.name = 'allowdivergence';
+      result.command = 'allowdivergence';
+      result.explanation = '允许国家间意识形态分歧（AI 可自由切换意识形态）。';
+      result.confidence = 0.85;
+      return result;
+    }
+
     // 未匹配：返回低置信，交由 LLM 兜底
     result.matched = false;
     result.confidence = 0;

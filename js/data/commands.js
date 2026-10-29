@@ -90,7 +90,14 @@ window.HOI4_COMMANDS = [
     syntax: 'instantconstruction',
     desc: '所有建造瞬间完成（调试）。',
     params: {}, examples: ['instantconstruction'],
-    tags: ['建造', '瞬间', 'instant']
+    tags: ['建造', '瞬间', 'instant', '作弊']
+  },
+  {
+    id: 'debug_powers', name: 'debug_powers', category: '科技',
+    syntax: 'debug_powers',
+    desc: '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。',
+    params: {}, examples: ['debug_powers'],
+    tags: ['作弊', '调试', '瞬间', '能力', 'powers']
   },
   {
     id: 'add_tech', name: 'add_tech', category: '科技',
@@ -171,6 +178,13 @@ window.HOI4_COMMANDS = [
     desc: '开启外交行动（即使处于战争等限制下）。',
     params: {}, examples: ['allowdiplomacy'],
     tags: ['外交', 'diplomacy']
+  },
+  {
+    id: 'allowdivergence', name: 'allowdivergence', category: '领土外交',
+    syntax: 'allowdivergence',
+    desc: '允许国家间意识形态分歧（AI 可自由切换意识形态）。',
+    params: {}, examples: ['allowdivergence'],
+    tags: ['分歧', '意识形态', 'divergence', '作弊']
   },
   {
     id: 'nocb', name: 'nocb', category: '领土外交',
