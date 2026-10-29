@@ -95,7 +95,7 @@ window.HOI4_COMMANDS = [
   {
     id: 'debug_powers', name: 'debug_powers', category: '科技',
     syntax: 'debug_powers',
-    desc: '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。',
+    desc: '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。注意：必须让游戏以 -debug 启动参数运行，否则控制台会红字报错、无法执行。',
     params: {}, examples: ['debug_powers'],
     tags: ['作弊', '调试', '瞬间', '能力', 'powers']
   },

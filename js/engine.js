@@ -363,14 +363,14 @@
     if (/瞬间(完成)?(建造|建)|秒建|即时建造|建筑瞬间|建造瞬间/.test(text)) {
       result.matched = true; result.name = 'instantconstruction';
       result.command = 'instantconstruction';
-      result.explanation = '开启后所有建造（工厂、建筑、舰船等）瞬间完成。再次输入可关闭。';
+      result.explanation = '开启后所有建造（工厂、建筑、舰船等）瞬间完成。无需 -debug 即可使用，再次输入可关闭。';
       result.confidence = 0.9;
       return result;
     }
     if (/调试权力|所有能力|作弊|神级|debug\s*powers/.test(low)) {
       result.matched = true; result.name = 'debug_powers';
       result.command = 'debug_powers';
-      result.explanation = '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。再次输入可关闭。';
+      result.explanation = '开启全部调试能力（含瞬间建造、强制外交、无视国策/科技限制等）。⚠ 需以 -debug 启动游戏，否则红字报错。再次输入可关闭。';
       result.confidence = 0.9;
       return result;
     }
