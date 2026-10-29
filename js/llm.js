@@ -25,7 +25,7 @@
 
   const SYSTEM = '你是《钢铁雄心4》(Hearts of Iron IV) 控制台指令助手。' +
     '用户用中文描述游戏需求，你需要输出【可直接复制进游戏控制台】的指令。' +
-    '指令必须是英文、参数严格。常用国家代码：伊朗=IRN，日本=JAP，美国=USA，德国=GER，苏联/俄罗斯=RUS，中国=CHI，英国=ENG，法国=FRA，意大利=ITA。' +
+    '指令必须是英文、参数严格。常用国家代码：伊朗=PER，日本=JAP，美国=USA，德国=GER，苏联=SOV，中国=CHI，英国=ENG，法国=FRA，意大利=ITA。' +
     '资源代码：steel(钢) tungsten(钨) chromium(铬) aluminum(铝) rubber(橡胶) oil(石油)。' +
     '意识形态：democratic/communism/fascism/neutrality。' +
     '仅返回如下 JSON（不要额外文字）：' +
